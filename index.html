@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>    
+    <section>
+      <div class="circle"></div>
+      
+        <header> 
+          <a href="index.html"class="logo"><img src="logo.png"></a>       
+          <ul>
+              <li><a href="jane.html" class="link-1">Menu</a></li>
+              <li><a href="order.html" class="link-2">Cart</a></li>
+              <li><a href="contact.html" class="link-3">Contact</a></li>
+              <li><a href="aboutUs.html" class="link-4">About Us</a></li>
+              <li><a href="location.html" class="link-5">Where to find us</a></li>
+          </ul>
+        </header>
+        
+        <div class="content">
+            <div class="textbox">
+                <h2> It's not just coffee,<br>It's <span>Niggbucks.</span></h2>
+                <p><q>I was doing fine without you <strong>till I saw your face, now I can't erase.</strong> Giving into all his bullshit is this what you want is this who you are? I was doing fine without you till I saw your eyes turned away from mine oh sweet darling where he wants you said come on superman say your stupid line</q><br><strong>-Tame Impala</strong></p>
+                <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+            <img src="img1.png" class="starbucks">
+        </div> 
+            </div>
+            <ul class="thumb">
+              <li data-color="#017143"><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor(this)"></li>
+              <li data-color="#eb7495"><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor(this)"></li>
+              <li data-color="#d752b1"><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor(this)"></li>
+              </ul>
+            <ul class="sci">
+              <li><a href="https://www.facebook.com/carljaphetaloro?mibextid=ZbWKwL"><img src="facebook.png"></a></li>
+              <li><a href="https://x.com/japitott?s=07"><img src="twitter.png"></a></li>
+              <li><a href="https://www.instagram.com/yurii.09_?igsh=MXY2YXdqNzI5cmVreg=="><img src="instagram.png"></a></li>
+            </ul>
+    </section>
+  
+    <script type="text/javascript">
+      function imgSlider(anything){document.querySelector('.starbucks').src=anything;}
+      function changeCircleColor(element){
+        const circle = document.querySelector('.circle');
+        const color = element.closest('li').dataset.color;
+        circle.style.background = color;
+        document.querySelector('span').style.color = color;
+      }
+    </script>
+</body>
+</html>
