@@ -14,44 +14,40 @@ closeShopping.addEventListener('click', ()=>{
 })
 
 let products = [
-    // id: oo number dapat
-    // name: pangalan ng product
-    // image: rename nyo image nyo para mas madali para kay js
-    //price: automatic na math nyan kaya nyo na yan HAHAHAHA
     {
         id: 1,
         name: 'WHITE MOCHA ESPRESSO',
-        image: '1.JPG',
+        image: '1.jpg',
         price: 135
     },
     {
         id: 2,
         name: 'SPANISH LATTE',
-        image: '2.JPG',
+        image: '2.jpg',
         price: 185
     },
     {
         id: 3,
         name: 'DARK MOCHA',
-        image: '3.JPG',
+        image: '3.jpg',
         price: 155
     },
     {
         id: 4,
         name: 'SALTED CARAMEL',
-        image: '4.JPG',
+        image: '4.jpg',
         price: 190
     },
     {
         id: 5,
         name: 'BLACK COFFEE',
-        image: '5.JPG',
+        image: '5.jpg',
         price: 99
     },
     {
         id: 6,
         name: 'MATCHA LATTE',
-        image: '6.JPG',
+        image: '6.jpg',
         price: 125
     },
     {
@@ -63,55 +59,55 @@ let products = [
     {
         id: 8,
         name: 'MILO DINOSAUR',
-        image: '8.JPG',
+        image: '8.jpg',
         price: 110
     },
     {
         id: 9,
         name: 'BELGIAN WAFFLES',
-        image: '9.JPG',
+        image: '9.jpg',
         price: 100
     },
     {
         id: 10,
         name: 'CINNAMON BUNS',
-        image: '10.JPG',
+        image: '10.jpg',
         price: 110
     },
     {
         id: 11,
         name: 'DOUBLE CHOCO BROWNIES',
-        image: '11.JPG',
+        image: '11.jpg',
         price: 110
     },
     {
         id: 12,
         name: 'CINNAMON COFFEE CAKE',
-        image: '12.JPG',
+        image: '12.jpg',
         price: 110
     },
     {
         id: 13,
         name: 'ICED LEMON LOAF CAKE',
-        image: '13.JPG',
+        image: '13.jpg',
         price: 180
     },
     {
         id: 14,
         name: 'BLUEBERRY MUFFINS',
-        image: '14.JPG',
+        image: '14.jpg',
         price: 210
     },
     {
         id: 15,
         name: 'HAM AND SWISS CROSSAINT',
-        image: '15.JPG',
+        image: '15.jpg',
         price: 250
     },
     {
         id: 16,
         name: 'VANILLA BEAN CUSTARD DANISH',
-        image: '16.JPG',
+        image: '16.jpg',
         price: 250
     }
 ];
