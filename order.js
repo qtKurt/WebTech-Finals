@@ -17,31 +17,31 @@ let products = [
     {
         id: 1,
         name: 'WHITE MOCHA ESPRESSO',
-        image: '1.jpg',
+        image: '1.webp',
         price: 135
     },
     {
         id: 2,
         name: 'SPANISH LATTE',
-        image: '2.jpg',
+        image: '2.webp',
         price: 185
     },
     {
         id: 3,
         name: 'DARK MOCHA',
-        image: '3.jpg',
+        image: '3.webp',
         price: 155
     },
     {
         id: 4,
         name: 'SALTED CARAMEL',
-        image: '4.jpg',
+        image: '4.webp',
         price: 190
     },
     {
         id: 5,
         name: 'BLACK COFFEE',
-        image: '5.jpg',
+        image: '5.webp',
         price: 99
     },
     {
