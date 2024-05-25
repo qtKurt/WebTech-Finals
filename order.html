@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body class="">
+    <a href="index.html" class="home-button">
+        <img src="home.svg" alt="Home">
+     </a>   
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total" onclick="openPopup()">Click this to add your order</div>
+            <div class="popup" id="popup">
+                <img src="404-tick.png">
+                <h2>Thank You!</h2>
+                <p>Your order has been placed!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <script src="order.js"></script>
+</body>
+</html>
