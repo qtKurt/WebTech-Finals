@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Poppins', Sans-Serif;
+}
+
+.home-button 
+{
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   z-index: 9999;
+}
+.home-button img 
+{
+   width: 40px;
+   height: auto;
+   filter:invert(1);
+}
+.location 
+{
+  position: relative;
+   min-height:100vh;
+   padding: 50px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: url('Röe_gård_café_2.jpg');
+   background-size: cover;   
+}
+.location .content
+{
+   max-width: 1200px;
+   text-align: center;
+}
+:root {
+  --text: #fff; 
+  --shadow: #017143; 
+}
+
+body {
+  background-color: #bfffec;
+}
+
+.text {
+  font-size: 4rem; /* Adjusted font size to 4rem */
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  margin: 0rem auto; /* Adjusted margin */
+  letter-spacing: 0.25rem; /* Adjusted letter spacing */
+
+  color: var(--text);
+  text-shadow: 
+    5px 5px        var(--shadow), 
+    4.875px 4.875px  var(--shadow), 
+    4.75px 4.75px    var(--shadow), 
+    4.625px 4.625px  var(--shadow),
+    4.5px 4.5px        var(--shadow), 
+    4.375px 4.375px  var(--shadow), 
+    4.25px 4.25px    var(--shadow), 
+    4.125px 4.125px  var(--shadow),
+    4px 4px        var(--shadow), 
+    3.875px 3.875px  var(--shadow), 
+    3.75px 3.75px    var(--shadow), 
+    3.625px 3.625px  var(--shadow),
+    3.5px 3.5px        var(--shadow), 
+    3.375px 3.375px  var(--shadow), 
+    3.25px 3.25px    var(--shadow), 
+    3.125px 3.125px  var(--shadow),
+    3px 3px        var(--shadow), 
+    2.875px 2.875px  var(--shadow), 
+    2.75px 2.75px    var(--shadow), 
+    2.625px 2.625px  var(--shadow),
+    2.5px 2.5px        var(--shadow), 
+    2.375px 2.375px  var(--shadow), 
+    2.25px 2.25px    var(--shadow), 
+    2.125px 2.125px  var(--shadow),
+    2px 2px        var(--shadow),
+    1.875px 1.875px  var(--shadow),
+    1.75px 1.75px    var(--shadow),
+    1.625px 1.625px  var(--shadow),
+    1.5px 1.5px        var(--shadow),
+    1.375px 1.375px  var(--shadow),
+    1.25px 1.25px    var(--shadow),
+    1.125px 1.125px  var(--shadow),
+    1px 1px        var(--shadow),
+    0.875px 0.875px  var(--shadow),
+    0.75px 0.75px    var(--shadow),
+    0.625px 0.625px  var(--shadow);
+}
+
+span {
+  position: relative;
+  animation: jump 1.75s infinite;
+  
+}
+
+/* Adjust animation delay for each span */
+span:nth-child(1) { animation-delay: 0s; }
+span:nth-child(2) { animation-delay: 0.15s; }
+span:nth-child(3) { animation-delay: 0.3s; }
+span:nth-child(4) { animation-delay: 0.45s; }
+span:nth-child(5) { animation-delay: 0.6s; }
+span:nth-child(6) { animation-delay: 0.75s; }
+span:nth-child(7) { animation-delay: 0.9s; }
+span:nth-child(8) { animation-delay: 1.05s; }
+span:nth-child(9) { animation-delay: 1.2s; }
+span:nth-child(10) { animation-delay: 1.35s; }
+span:nth-child(11) { animation-delay: 1.5s; }
+span:nth-child(12) { animation-delay: 1.65s; }
+span:nth-child(13) { animation-delay: 1.8s; }
+span:nth-child(14) { animation-delay: 1.95s; }
+span:nth-child(15) { animation-delay: 2.1s; }
+span:nth-child(16) { animation-delay: 2.25s; }
+span:nth-child(17) { animation-delay: 2.4s; }
+span:nth-child(18) { animation-delay: 2.55s; }
+span:nth-child(19) { animation-delay: 2.7s; }
+span:nth-child(20) { animation-delay: 2.85s; }
+span:nth-child(21) { animation-delay: 3s; }
+
+@keyframes jump {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.location iframe {
+  border: 10px solid white; /* Adjust the thickness of the border as needed */
+  border-radius: 20px; /* Adjust the border radius to make it rounded */
+}

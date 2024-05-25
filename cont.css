@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family:'Poppins', Sans-Serif;
+}
+
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+.home-button img {
+    width: 40px;
+    height: auto;
+    filter:invert(1);
+}
+
+.contact {
+   position: relative;
+   min-height:100vh;
+   padding: 50px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: url('istockphoto-1145612951-1024x1024.jpg');
+   background-size: cover;   
+}    
+.contact .content {
+   max-width: 800px;
+   text-align: center;
+}
+.contact .content h1 {
+   font-size: 54px;
+   font-weight: 500px;
+   color:#017143;
+}
+.contact .content p {
+   font-size: 24px;
+   font-weight: 400px;
+   color:#fff;
+}
+.container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: auto;
+}
+.container .contactInfo {
+   width: 50%;
+   display: flex;
+   flex-direction: column; 
+}
+.container .contactInfo .box {
+   position: relative;
+   padding: 20px 0;
+   display: flex;
+}
+.container .contactInfo .icon {
+   min-width: 60px;
+   height: 60px;
+   background: #017143;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 22px;
+}
+.container .contactInfo .icon img {
+   width: 20px;
+   height: 20px;
+   filter: invert(1);
+}
+.container .contactInfo .box .text {
+   display: flex;
+   margin-left: 20px;
+   font-size: 16px;
+   color: #fff;
+   flex-direction: column;
+   font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+   font-weight: 500;
+   color: #fff;
+}
+.contactForm {
+   width: 40%;
+   padding: 40px;
+   background: #fff;
+   border-radius: 55px;
+}
+.contactForm h2 {
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+}
+.contactForm .inputBox {
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+}
+.contactForm input
+{
+   border-radius: 0%;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+   width: 100%;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #333;
+   outline: none;
+   resize: none;
+}
+.contactForm .inputBox span {
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none;
+   transition: 0.5s;
+   color: #666;
+}
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+   color:#e91e63;
+   font-size: 12px;
+   transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+   width: 100px;
+   background:#017143;
+   color:#fff;
+   border:none;
+   cursor: pointer;
+   padding:10px;
+   font-size: 18px;
+   border-radius: 25px;
+}
+@media(max-width:991px) {
+   .home-button {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 9999;
+   }
+   .home-button img {
+      width: 22px;
+      height: auto;
+      filter:invert(1);
+   }
+   .box {
+      position: relative;
+      top: 750px;
+      left: -60px;
+      padding-right: 10px;
+   }
+   .contact {
+      padding: 50px;
+   }
+   .container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+   .container .contactInfo {
+      margin-bottom: 20px;
+   }
+   .container .contactInfo,
+   .contactForm {
+      position: relative;
+      top: -260px;
+      width: 100%;
+   }
+   .contact .content h1 {
+      font-size: 27px;
+      font-weight: 250px;
+      color:#017143;
+   }
+   .contact .content p {
+      font-size: 12px;
+      font-weight: 200px;
+      color:#fff;
+   }
+   .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+   }
+   .container .contactInfo {
+      width: 50%;
+      display: flex;
+      flex-direction: column; 
+   }
+   .container .contactInfo .box {
+      position: relative;
+      padding: 8px 0;
+      display: flex;
+   }
+   .container .contactInfo .icon {
+      min-width: 40px;
+      height: 40px;
+      background: #017143;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+   }
+   .container .contactInfo .icon img {
+      width: 10px;
+      height: 10px;
+      filter: invert(1);
+   }
+   .container .contactInfo .box .text {
+      display: flex;
+      margin-left: 20px;
+      font-size: 12.5px;
+      color: #fff;
+      flex-direction: column;
+      font-weight: 300;
+   }
+   .container .contactInfo .box .text h3 {
+      font-weight: 500;
+      color: #fff;
+   }
+}
+
+.popup {
+   width: 400px;
+   background: #fff;
+   border-radius: 6px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.1);
+   text-align: center;
+   padding: 30px;
+   color: #333;
+   visibility: hidden;
+   transition: transform 0.4s, visibility 0s 0.4s; 
+   z-index: 999; 
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+}
+
+.popup img {
+   width: 100px;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+   font-size: 24px; 
+   font-weight: 500;
+   margin: 20px 0 10px; 
+}
+
+.popup p {
+   margin: 10px 0; 
+}
+
+.popup button {
+   width: 200px; 
+   padding: 10px 0;
+   background: #6fd649;
+   color: #fff;
+   border: 0;
+   outline: none;
+   font-size: 18px;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup {
+   visibility: visible;
+   transform: translate(-50%, -50%) scale(1); 
+   transition: transform 0.4s, visibility 0s; 
+}
+.closeShopping {
+   cursor: pointer;
+   transition: box-shadow 0.3s ease-in-out; 
+}
+
+.closeShopping:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
